@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import Header from "./components/header/Header";
 import Subscribe from "./components/subscribe/Subscribe";
@@ -12,12 +12,12 @@ const lngs = [
 ];
 
 function App() {
-  const { t, i18n } = useTranslation();
-  document.body.dir = i18n.dir;
+  // const { t, i18n } = useTranslation();
+  // document.body.dir = i18n.dir;
 
-  const handleTrans = (code) => {
-    i18n.changeLanguage(code);
-  };
+  // const handleTrans = (code) => {
+  //   i18n.changeLanguage(code);
+  // };
 
   return (
     <div className="App">

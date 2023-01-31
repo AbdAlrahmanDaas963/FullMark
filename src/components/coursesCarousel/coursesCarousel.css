@@ -17,31 +17,34 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.carousel-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .carousel-in {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  overflow-x: auto;
-  width: 100vw;
+  flex-shrink: 0;
+
+  overflow-x: hidden;
+  width: fit-content;
 }
+
+/* -==-=-=-=-=-=-=-==-=-=-= */
 .course-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 16px;
+  margin: 0 10px;
   gap: 5px;
 
   width: 538px;
   height: 240px;
 
-  /* #D9D9D9 */
-
   background: rgba(0, 14, 34, 0.5);
-  /* card blur */
 
   backdrop-filter: blur(12.5px);
-  /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 13px;
 }
