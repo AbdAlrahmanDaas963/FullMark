@@ -4,7 +4,17 @@
   box-sizing: border-box;
 }
 :root {
-  --primary-font-color: #1D6CDD;
+  --color-pattern-one: #002b6a;
+  --color-pattern-two: #00409d;
+  --color-pattern-three: #ecebe4;
+  --color-pattern-four: #d55353;
+  --color-pattern-five: #c53030;
+  --color-pattern-six: #000e22;
+
+  --text-dark-mode: #ecebe4;
+  --text-light-mode: #ecebe4;
+
+  --primary-font-color: #1d6cdd;
   --secoundary-font-color: rgb(119, 119, 143);
   --blue-primary: #5d94e4;
 }
@@ -15,6 +25,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--color-pattern-six);
+  color: var(--text-light-mode);
+  overflow-x: hidden;
 }
 
 code {

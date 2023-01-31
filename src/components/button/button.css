@@ -1,0 +1,11 @@
+.btn{
+  color: var(--text-light-mode);
+  background-color: var(--color-pattern-four);
+
+  width: fit-content;
+  padding: 8px 10px;
+  border-radius: 12px;
+
+  font-weight: 600;
+  font-size: 17px;
+}

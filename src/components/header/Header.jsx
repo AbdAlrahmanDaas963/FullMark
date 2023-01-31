@@ -1,4 +1,7 @@
 import * as React from "react";
+
+import "./header.css";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,14 +14,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-
-const pages = ["موادي", "الجدول"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const pages = ["tables", "courses"];
+  const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,7 +38,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="header">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
