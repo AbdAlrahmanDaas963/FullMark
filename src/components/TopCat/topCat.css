@@ -1,0 +1,32 @@
+.top-cat {
+  width: 100%;
+  height: 500px;
+  border: 1px dotted blue;
+}
+.top-cat-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cat-header-left {
+}
+.header-left-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+
+  text-transform: capitalize;
+}
+.header-left-desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.cat-card-svg {
+  background-color: #36d96b;
+}

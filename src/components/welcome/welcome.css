@@ -13,18 +13,22 @@
   font-weight: 700;
   font-size: 44px;
   line-height: 77px;
-  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 .welcome-content {
-  background-color: #003f9d40;
+  /* background-color: #003f9d40; */
   width: 100%;
   min-height: 50vh;
 
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  padding-left: 50px;
+  /* padding-left: 50px; */
   justify-items: center;
+}
+.wlc-content-left {
+  inline-size: 370px;
+  overflow-wrap: break-word;
 }
 .wlc-content-left div {
   margin: 10px 0;
@@ -32,10 +36,13 @@
 
 .big-text {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 39px;
   width: fit-content;
+  text-transform: uppercase;
 }
-
+.big-text span {
+  color: var(--text-focused-mode);
+}
 @media screen and (max-width: 700px) {
   .welcome-content {
     grid-template-columns: 100%;

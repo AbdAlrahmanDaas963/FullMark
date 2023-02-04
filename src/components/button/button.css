@@ -1,10 +1,10 @@
-.btn{
-  color: var(--text-light-mode);
-  background-color: var(--color-pattern-four);
+.btn {
+  color: var(--color-pattern-one);
+  background-color: var(--text-focused-mode);
 
   width: fit-content;
-  padding: 8px 10px;
-  border-radius: 12px;
+  padding: 10px;
+  border-radius: 6px;
 
   font-weight: 600;
   font-size: 17px;
