@@ -1,4 +1,6 @@
-
-.header{
-    background-color: var(--color-pattern-six) !important;
+.header {
+  background-color: var(--color-pattern-six) !important;
+}
+.header-brand svg {
+  margin-right: 20px;
 }

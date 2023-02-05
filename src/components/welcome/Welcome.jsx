@@ -4,7 +4,7 @@ import Button from "../button/Button";
 
 const h1 = (
   <>
-    welcome to <span>best</span> way to learn in <span>syria</span>
+    welcome to <span>best</span> way to learn in <span>kuwait</span>
   </>
 );
 const p = "Start now with the knowledge of the world";
@@ -46,7 +46,6 @@ const svg = (
 function Welcome() {
   return (
     <div className="welcome">
-      {/* <div className="welcome-title">Home</div> */}
       <div className="welcome-content">
         <div className="wlc-content-left">
           <div className="big-text">{h1}</div>

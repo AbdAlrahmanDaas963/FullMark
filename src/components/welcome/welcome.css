@@ -7,7 +7,9 @@
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid red; */
+  position: relative;
 }
+
 .welcome-title {
   justify-self: flex-start;
   font-weight: 700;

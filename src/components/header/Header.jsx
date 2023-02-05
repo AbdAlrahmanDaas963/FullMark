@@ -130,8 +130,16 @@ function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const pages = ["tables", "courses"];
-  const settings = ["Profile", "Account", "Dashboard", "Logout"];
+  const pages = [];
+  // const pages = ["tables", "courses"];
+  const settings = [
+    "Profile",
+    "Account",
+    "Dashboard",
+    "Logout",
+    "tables",
+    "courses",
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -151,8 +159,8 @@ function Header() {
   return (
     <AppBar position="static" className="header">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          {/* {logo} */}
+        <Toolbar disableGutters className="header-brand">
+          {logo}
           <Typography
             variant="h6"
             noWrap
@@ -170,7 +178,7 @@ function Header() {
             Full Mark
           </Typography>
 
-          <Box
+          {/* <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
@@ -210,8 +218,8 @@ function Header() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          {logo}
+          </Box> */}
+          {/* {logo} */}
           <Typography
             variant="h5"
             noWrap

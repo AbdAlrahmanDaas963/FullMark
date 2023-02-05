@@ -25,12 +25,15 @@
 }
 .footer-brand {
 }
-
+.footer-contact div svg,
+.footer-brand div svg {
+  margin-right: 10px;
+}
 @media screen and (max-width: 717px) {
   .footer {
     padding: 50px 0;
   }
   .footer-grid-container {
-    justify-content: center;
+    justify-content: center !important;
   }
 }

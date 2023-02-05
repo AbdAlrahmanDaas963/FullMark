@@ -6,6 +6,7 @@ import CoursesCarousel from "./components/coursesCarousel/CoursesCarousel";
 import LandingBar from "./components/landingBar/LandingBar";
 import TopCategory from "./components/TopCat/TopCategory";
 import Footer from "./components/footer/Footer";
+import CommentSection from "./components/Comments/CommentSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Welcome />
       <LandingBar />
       <TopCategory />
+      <CommentSection />
       {/* <CoursesCarousel /> */}
       <Footer />
       {/* <Subscribe />
