@@ -5,6 +5,7 @@ import Welcome from "./components/welcome/Welcome";
 import CoursesCarousel from "./components/coursesCarousel/CoursesCarousel";
 import LandingBar from "./components/landingBar/LandingBar";
 import TopCategory from "./components/TopCat/TopCategory";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Welcome />
       <LandingBar />
       <TopCategory />
-      <CoursesCarousel />
+      {/* <CoursesCarousel /> */}
+      <Footer />
       {/* <Subscribe />
       <Asks /> */}
     </div>

@@ -76,7 +76,7 @@ function TopCategory() {
           <div className="header-left-title">top category</div>
           <div className="header-left-desc">find your type of study</div>
         </div>
-        <Button variant="contained">Go To All</Button>
+        <div className="btn-info">Go To All</div>
       </div>
       <div className="top-cat-content">
         {items.map((item) => (
