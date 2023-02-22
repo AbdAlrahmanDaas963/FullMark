@@ -1,0 +1,11 @@
+{
+  "app_title": "Full Mark",
+  "language": "Language",
+  "welcome_message": "Welcome",
+  "days_since_release": "it's been {{number_of_days}} days since this video was released",
+  "welcome_section": {
+    "welcome" : "welcome to best way to learn in syria",
+    "paragraph": "Start now with the knowledge of the world",
+    "btn": "Get Started"
+  }
+}

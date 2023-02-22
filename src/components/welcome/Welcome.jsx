@@ -1,6 +1,9 @@
 import React from "react";
-import "./welcome.css";
+import { useTranslation } from "react-i18next";
+
 import Button from "../button/Button";
+
+import "./welcome.css";
 
 const h1 = (
   <>
@@ -44,13 +47,14 @@ const svg = (
 );
 
 function Welcome() {
+  const { t } = useTranslation();
   return (
     <div className="welcome">
       <div className="welcome-content">
         <div className="wlc-content-left">
-          <div className="big-text">{h1}</div>
-          <div>{p}</div>
-          <Button title={"Get Started"} />
+          <div className="big-text">{t("welcome_section.welcome")}</div>
+          <div>{t("welcome_section.paragraph")}</div>
+          <Button title={t("welcome_section.btn")} />
         </div>
         <div>{svg}</div>
       </div>

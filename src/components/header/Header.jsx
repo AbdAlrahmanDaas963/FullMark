@@ -14,6 +14,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import LangChanger from "../langChanger/LangChanger";
 
 const logo = (
   <svg
@@ -258,7 +259,7 @@ function Header() {
               </Button>
             ))}
           </Box>
-
+          <LangChanger />
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
