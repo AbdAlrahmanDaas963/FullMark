@@ -7,5 +7,23 @@
     "welcome" : "welcome to best way to learn in syria",
     "paragraph": "Start now with the knowledge of the world",
     "btn": "Get Started"
+  },
+  "landingBar_section": {
+    "courses": "courses to learn",
+    "teacher" : "professional teacher",
+    "student": "student online"
+  },
+  "topCat_section": {
+    "title": "top category",
+    "paragraph": "find your type of study",
+    "btn": "go to all"
+  },
+  "comments_section": {
+    "title": "what do you think about us ?",
+    "paragraph": "student help us to improve the education process want to be part of our world !"
+  },
+  "footer_section": {
+    "rights": "©2023 - DAOD frontline All rights reserved",
+    "contact": "contact"
   }
 }

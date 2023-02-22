@@ -1,7 +1,9 @@
 import React from "react";
-import "./topCat.css";
-import { Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
+
 import TopCatCard from "./TopCatCard";
+
+import "./topCat.css";
 
 const svg1 = (
   <svg
@@ -61,6 +63,7 @@ const svg3 = (
 );
 
 function TopCategory() {
+  const { t } = useTranslation();
   const items = [
     { id: 1, svg: svg1, title: "mathematic", desc: "4 course available" },
     { id: 2, svg: svg2, title: "biology", desc: "36 course available" },
@@ -73,10 +76,12 @@ function TopCategory() {
     <div className="top-cat">
       <div className="top-cat-header">
         <div className="cat-header-left">
-          <div className="header-left-title">top category</div>
-          <div className="header-left-desc">find your type of study</div>
+          <div className="header-left-title">{t("topCat_section.title")}</div>
+          <div className="header-left-desc">
+            {t("topCat_section.paragraph")}
+          </div>
         </div>
-        <div className="btn-info">Go To All</div>
+        <div className="btn-info">{t("topCat_section.btn")}</div>
       </div>
       <div className="top-cat-content">
         {items.map((item) => (

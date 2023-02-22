@@ -1,6 +1,8 @@
 import React from "react";
-import "./comments.css";
+import { useTranslation } from "react-i18next";
+
 import CardComment from "./CardComment";
+import "./comments.css";
 
 const person = (
   <svg
@@ -92,6 +94,8 @@ const person = (
 );
 
 function CommentSection() {
+  const { t } = useTranslation();
+
   const items = [
     {
       id: 0,
@@ -122,11 +126,8 @@ function CommentSection() {
       <div>
         <div className="comments-section-header">
           <div>
-            <h1>what do you think about us ?</h1>
-            <div>
-              student help us to improve the education process want to be part
-              of our world !
-            </div>
+            <h1>{t("comments_section.title")}</h1>
+            <div>{t("comments_section.paragraph")}</div>
           </div>
         </div>
         <div className="comments">

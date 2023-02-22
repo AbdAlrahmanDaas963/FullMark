@@ -1,7 +1,7 @@
 import React from "react";
-import Grid from "@mui/material/Unstable_Grid2";
+import { useTranslation } from "react-i18next";
 
-import LandingBarItem from "../landingBar/LandingBarItem";
+import Grid from "@mui/material/Unstable_Grid2";
 
 import "./footer.css";
 
@@ -149,6 +149,8 @@ const phone = (
 );
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className="footer">
       <Grid
@@ -165,20 +167,20 @@ function Footer() {
         <Grid>
           <div className="grid-item footer-brand">
             <div>{logo} FULL MARK</div>
-            <div>©2023 - DAOD frontline All rights reserved</div>
+            <div>{t("footer_section.rights")}</div>
           </div>
         </Grid>
         <Grid>
           <div className="grid-item footer-contact">
-            <div>Contact:</div>
-            <div>{email} abdalrahmanDass@gmail.com</div>
+            <div>{t("footer_section.contact")}:</div>
+            <div>{email} abdalrahmanDaas@gmail.com</div>
             <div>{phone} +963 934 619 443</div>
           </div>
         </Grid>
         <Grid>
           <div className="grid-item footer-pages">
             <div>UX/UI : Nourz</div>
-            <div>frontend : da’ass</div>
+            <div>frontend : daas</div>
             <div>backend: shantout</div>
           </div>
         </Grid>

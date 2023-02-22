@@ -1,6 +1,8 @@
 import React from "react";
-import "./landingBar.css";
+import { useTranslation } from "react-i18next";
+
 import LandingBarItem from "./LandingBarItem";
+import "./landingBar.css";
 
 const svg1 = (
   <svg
@@ -76,10 +78,11 @@ const svg3 = (
 );
 
 function LandingBar() {
+  const { t } = useTranslation();
   const items = [
-    { id: 0, svg: svg1, value: "+500", title: "courses to learn" },
-    { id: 1, svg: svg2, value: "+40", title: "professional teacher" },
-    { id: 2, svg: svg3, value: "+6K", title: "student online" },
+    { id: 0, svg: svg1, value: "+500", title: t("landingBar_section.courses") },
+    { id: 1, svg: svg2, value: "+40", title: t("landingBar_section.teacher") },
+    { id: 2, svg: svg3, value: "+6K", title: t("landingBar_section.student") },
   ];
   return (
     <div className="landing-bar">
