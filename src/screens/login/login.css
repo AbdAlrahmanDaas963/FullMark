@@ -1,0 +1,13 @@
+.login {
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.login-form {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

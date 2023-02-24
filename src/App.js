@@ -11,7 +11,7 @@ import CommentSection from "./components/Comments/CommentSection";
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       <Welcome />
       <LandingBar />
       <TopCategory />

@@ -175,8 +175,8 @@ function Footer() {
             <div>{t("footer_section.contact")}:</div>
             <div>
               {email}
-              <a href="mailto:Fullmarkinstitute@gmail.com">
-                Fullmarkinstitute@gmail.com
+              <a href="mailto:Fullmarkinstitute@support.com">
+                Fullmarkinstitute@support.com
               </a>
             </div>
             <div>

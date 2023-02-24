@@ -1,13 +1,19 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./screens/login/Login";
+import Signup from "./screens/signup/Signup";
+
 import reportWebVitals from "./reportWebVitals";
+
+import App from "./App";
+import "./index.css";
 
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
+import Header from "./components/header/Header";
 
 i18n
   .use(initReactI18next)
@@ -34,13 +40,17 @@ const loadingMarkup = (
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={loadingMarkup}>
-      <App />
-    </Suspense>
+    <BrowserRouter>
+      <Suspense fallback={loadingMarkup}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
