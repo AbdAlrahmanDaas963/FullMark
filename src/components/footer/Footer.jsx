@@ -173,8 +173,16 @@ function Footer() {
         <Grid>
           <div className="grid-item footer-contact">
             <div>{t("footer_section.contact")}:</div>
-            <div>{email} abdalrahmanDaas@gmail.com</div>
-            <div>{phone} +963 934 619 443</div>
+            <div>
+              {email}
+              <a href="mailto:Fullmarkinstitute@gmail.com">
+                Fullmarkinstitute@gmail.com
+              </a>
+            </div>
+            <div>
+              {phone}
+              <a href="tel:+965 554 74363">+965 554 74363</a>
+            </div>
           </div>
         </Grid>
         <Grid>
