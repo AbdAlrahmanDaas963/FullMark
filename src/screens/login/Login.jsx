@@ -5,11 +5,15 @@ import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
+import Divider from "@mui/material/Divider";
+
+import GoogleIcon from "@mui/icons-material/Google";
+import AppleIcon from "@mui/icons-material/Apple";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 import "./login.css";
 
@@ -79,6 +83,19 @@ function Login() {
               <Button>sign up</Button>
             </Link>
           </div>
+          <Divider style={{ width: "100%" }} color="#363759">
+            OR
+          </Divider>
+          <Stack
+            width={"100%"}
+            direction={"row"}
+            alignItems={"center"}
+            justifyContent={"space-evenly"}
+          >
+            <GoogleIcon className="logins-icons" htmlColor="#fff" />
+            <AppleIcon className="logins-icons" htmlColor="#fff" />
+            <FacebookIcon className="logins-icons" htmlColor="#fff" />
+          </Stack>
         </Stack>
       </form>
     </Container>

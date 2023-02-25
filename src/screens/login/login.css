@@ -1,13 +1,23 @@
 .login {
   height: 100vh;
-  min-height: 500px;
+  min-height: 600px;
   display: flex;
   align-content: center;
   justify-content: center;
+  border: 1px solid red;
 }
 .login-form {
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid blue;
+}
+
+.logins-icons {
+  background-color: var(--color-pattern-three);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 5px;
 }
