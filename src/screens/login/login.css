@@ -1,17 +1,25 @@
+.login-back {
+  background: #bec0ef;
+}
 .login {
   height: 100vh;
   min-height: 600px;
-  display: flex;
+  display: flex !important;
   align-content: center;
   justify-content: center;
   border: 1px solid red;
 }
 .login-form {
+  width: 400px;
+  height: 600px;
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
+
+  background: rgba(229, 230, 247, 0.8);
+  backdrop-filter: blur(2px);
+  border-radius: 0 0 150px 150px;
 }
 
 .logins-icons {
