@@ -7,7 +7,6 @@
   display: flex !important;
   align-content: center;
   justify-content: center;
-  border: 1px solid red;
 }
 .login-form {
   width: 400px;
