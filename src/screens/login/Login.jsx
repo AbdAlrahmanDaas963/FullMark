@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 import { useFormik } from "formik";
@@ -10,7 +11,6 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
 
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
@@ -369,10 +369,6 @@ const svg = (
     />
   </svg>
 );
-const schema = yup.object().shape({
-  email: yup.string().email().required(),
-  password: yup.string().min(6).required(),
-});
 
 const handleOnSubmit = (values) => {
   const fullName = Object.keys(values)
@@ -382,6 +378,19 @@ const handleOnSubmit = (values) => {
 };
 
 function Login() {
+  const { t } = useTranslation();
+
+  const schema = yup.object().shape({
+    email: yup
+      .string()
+      .email(t("login_screen.errors.email.vallid"))
+      .required(t("login_screen.errors.erros.required")),
+    password: yup
+      .string()
+      .min(6, t("login_screen.errors.password.min"))
+      .required(t("login_screen.errors.password.required")),
+  });
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -403,7 +412,7 @@ function Login() {
   return (
     <div className="login-back">
       <Container className="login">
-        <div>{svg}</div>
+        <div className="login-svg">{svg}</div>
         <form onSubmit={formik.handleSubmit} className="login-form">
           <Stack
             spacing={2}
@@ -411,13 +420,13 @@ function Login() {
             justifyContent="center"
             alignItems="center"
           >
-            <h1>Welcome Back</h1>
+            <h1>{t("login_screen.form_title")}</h1>
             <TextField
               error={formik.errors.email}
               id="standard-error-helper-text-email"
-              label="E-mail"
+              label={t("login_screen.email_input")}
               helperText={formik.errors.email ? formik.errors.email : ""}
-              variant="standard"
+              variant="outlined"
               type="email"
               autoComplete="true"
               value={formik.values.email}
@@ -427,9 +436,9 @@ function Login() {
             <TextField
               error={formik.errors.password}
               id="standard-error-helper-text-password"
-              label="Password"
+              label={t("login_screen.password_input")}
               helperText={formik.errors.password ? formik.errors.password : ""}
-              variant="standard"
+              variant="outlined"
               type="password"
               autoComplete="true"
               value={formik.values.password}
@@ -442,22 +451,26 @@ function Login() {
               type="submit"
               disabled={!formik.isValid}
             >
-              Login
+              {t("login_screen.login_input")}
             </Button>
-            <div>
-              don’t have account?{" "}
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              justifyContent={"center"}
+            >
+              <div>{t("login_screen.don’t_have_account")}</div>
               <Link to={"/signup"}>
-                <Button>sign up</Button>
+                <Button>{t("login_screen.signup")}</Button>
               </Link>
-            </div>
+            </Stack>
             <Divider style={{ width: "100%" }} color="#363759">
-              OR
+              {t("login_screen.or")}
             </Divider>
             <Stack
               width={"100%"}
               direction={"row"}
               alignItems={"center"}
-              justifyContent={"space-evenly"}
+              justifyContent={"center"}
             >
               <GoogleIcon className="logins-icons" htmlColor="#fff" />
               <AppleIcon className="logins-icons" htmlColor="#fff" />

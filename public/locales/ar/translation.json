@@ -25,5 +25,26 @@
   "footer_section": {
     "rights": "©2023 - جميع الحقوق محفوظة",
     "contact": "تواصل"
+  },
+  "login_screen": {
+    "form_title": "أهلا بك",
+    "email_input": "ايميل",
+    "password_input": "كلمة السر",
+    "login_input": "تسجيل الدخول",
+    "don’t_have_account": "ليس لديك حساب بعد ؟",
+    "signup": "انشاء حساب",
+    "or": "أو",
+    "errors": {
+      "email": {
+        "string": "",
+        "vallid": "يجب أن يكون بريدًا إلكترونيًا صالحًا",
+        "required": "إن البريد الإلكترونى حقل مطلوب"
+      },
+      "password": {
+        "string": "",
+        "min": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+        "required": "كلمة المرور هي حقل مطلوب"
+      }
+    }
   }
 }

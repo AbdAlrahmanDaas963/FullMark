@@ -53,6 +53,9 @@ code {
 a {
   color: inherit;
 }
+input {
+  text-align: left !important;
+}
 .App {
   overflow-x: hidden;
 }

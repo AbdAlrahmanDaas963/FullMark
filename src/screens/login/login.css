@@ -10,6 +10,7 @@
 }
 .login-form {
   width: 400px;
+  min-width: 400px;
   height: 600px;
   min-height: 500px;
   display: flex;
@@ -27,4 +28,22 @@
   width: 40px !important;
   height: 40px !important;
   padding: 5px;
+  margin: 0 7px;
+}
+
+@media screen and (max-width: 1022px) {
+  .login-svg {
+    display: none;
+  }
+
+  .login-form {
+    width: 400px;
+    height: 600px;
+    min-height: 500px;
+
+    border-radius: 0;
+  }
+  .login-back {
+    background: rgba(229, 230, 247, 0.8);
+  }
 }
